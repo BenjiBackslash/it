@@ -59,7 +59,7 @@ class DB:
 
         def normalize_author(self, author_name):
             author_name = self.normalize_text(author_name)
-            if author_name.lower() is in self.empty_author:
+            if author_name.lower() in self.empty_author:
                 author_name = self.empty_author_name
             return author_name
 
